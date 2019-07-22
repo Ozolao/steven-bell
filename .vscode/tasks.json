@@ -7,6 +7,26 @@
       "type": "npm",
       "script": "start",
       "problemMatcher": []
+    },
+    {
+      "type": "gulp",
+      "task": "default",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "tasks",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "serve:test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": []
     }
   ]
 }
