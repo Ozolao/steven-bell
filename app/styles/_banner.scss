@@ -1,0 +1,43 @@
+// =================================
+// ============Banner===============
+// =================================
+/* Banner */
+.banner {
+  // display        : flex;
+  // height         : 100vh;
+  // align-items    : center;
+  // justify-content: center;
+
+  // text-align: center;
+
+  // background           : url("../image/hero-image.jpg") center/cover no-repeat;
+  // background-color     : rgba(0, 0, 0, .5);
+  // background-blend-mode: multiply
+}
+
+
+
+/* Banner content */
+h1 {
+  // color    : #fff;
+  // font-size: 3rem;
+}
+
+button {
+  // padding: .5em 1em;
+
+  // color      : rgb(255, 255, 255);
+  // font-size  : 1.5rem;
+  // font-weight: bold;
+
+  // background   : rgb(255, 153, 0);
+  // outline      : none;
+  // border       : none;
+  // border-radius: 3px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  // background: rgb(216, 130, 0);
+}
