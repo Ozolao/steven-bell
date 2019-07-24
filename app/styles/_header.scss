@@ -5,27 +5,30 @@
   display        : flex;
   justify-content: space-between;
   align-items    : center;
-  padding        : 12px 20px;
+  padding        : .75rem 1.25rem;
 
 
 
+  // ====================
+  // ===================
   // ===================
   img {
-    max-width: 140px;
+    max-width: 8.75rem;
   }
 
 
 
+  // ====================
+  // =====================
   // ======================
   button {
-    padding: 12px;
+    padding: .75rem;
 
-    background: #075aae;
-    border    : none;
+    background   : #075aae;
+    border       : none;
+    border-radius: $myBorderRadius;
 
     cursor: pointer;
-
-
 
     // ====================
     i {
