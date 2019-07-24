@@ -24,9 +24,9 @@
   button {
     padding: .75rem;
 
-    background   : #075aae;
+    background   : $primaryColor;
     border       : none;
-    border-radius: $myBorderRadius;
+    border-radius: $borderRadius;
 
     cursor: pointer;
 
