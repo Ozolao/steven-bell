@@ -33,15 +33,13 @@
       font-weight: 300;
     }
 
-    // ==========================
     h1 {
-      margin-top: 75px;
+      margin-top: 4.6875rem;
 
       font-size  : 1.875rem;
       line-height: 1.2;
     }
 
-    // ===========================
     h3 {
       font-size  : 1.5rem;
       line-height: 1.4;
@@ -58,37 +56,49 @@
 
       text-decoration: none;
 
-      border       : 1px solid #ffffff;
+      border       : 0.0625rem solid #ffffff;
       border-radius: $borderRadius;
 
       transition: all 200ms linear;
 
 
+
+      // ===================================
       // ================================
       // ================================
       &:first-of-type {
-        margin-top   : 25px;
-        margin-bottom: 25px;
+        margin-top   : 1.5625rem;
+        margin-bottom: 1.5625rem;
 
         color: black;
 
         background: white;
 
+
+
+        // ===================================
+        // ================================
         // ===============================
         &:hover {
           background: rgba(255, 255, 255, 0.9);
-          border    : 1px solid rgba(255, 255, 255, 0.9);
+          border    : 0.0625rem solid rgba(255, 255, 255, 0.9);
         }
       }
 
 
+
+      // ===================================
       // ===============================
       // ================================
       &:last-of-type {
-        margin-bottom: 90px;
+        margin-bottom: 5.625rem;
 
         color: white;
 
+
+
+        // ===================================
+        // ===============================
         // =============================
         &:hover {
           color: black;
