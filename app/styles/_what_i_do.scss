@@ -55,14 +55,52 @@
   // ==================================
   // =================================
   .i-do {
-    margin : .625rem;
-    padding: 1.25rem;
+    margin : 1.25rem .625rem;
+    padding: 2.55rem 1.25rem;
 
     color: white;
 
-    background: $primaryColor;
+    background   : $primaryColor;
+    border-radius: $borderRadius;
 
-    // ==========================
+
+
+    // ===============================
+    // ==================================
+    // =================================
+    .i-do-separator {
+      border-top: 1px solid #efefef;
+      width     : 20%;
+      display   : inline-block;
+    }
+
+
+
+    // ===============================
+    // ==================================
+    // =================================
+    a {
+      display   : inline-block;
+      min-width : 10rem;
+      margin-top: .3125rem;
+      padding   : 1.25rem 2.1875rem;
+
+      color: white;
+
+      border       : 0.0625rem solid #ffffff;
+      border-radius: $borderRadius;
+
+      transition: all 200ms linear;
+
+
+
+      // ===================================
+      // ================================
+      // ===============================
+      &:hover {
+        border: 1px solid #075aae;
+      }
+    }
   }
 
 
