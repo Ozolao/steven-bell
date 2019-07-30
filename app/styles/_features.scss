@@ -1,0 +1,21 @@
+// =================================
+// =================================
+// =================================
+.features {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+
+  background: #f3f8fb;
+
+  h3 {
+    color      : #595959;
+    font-size  : 1.25rem;
+    font-weight: 300;
+  }
+
+  img {
+    margin-top   : 20px;
+    margin-bottom: 20px;
+  }
+}
