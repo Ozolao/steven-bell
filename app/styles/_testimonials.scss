@@ -1,0 +1,56 @@
+// =================================
+// =================================
+// =================================
+.testimonials {
+  height        : 100vh;
+  padding-top   : 9.375rem;
+  padding-bottom: 9.375rem;
+
+  background: {
+    image   : url("../images/testimonials.jpg");
+    size    : cover;
+    position: left center;
+    repeat  : no-repeat;
+  }
+
+
+
+  // ===============================
+  // ==================================
+  // =================================
+  div {
+    width       : 90%;
+    margin-left : auto;
+    margin-right: auto;
+
+
+
+    // ============================
+    // ============================
+    // ============================
+    h2,
+    h3,
+    h5 {
+      color      : white;
+      font-weight: 300;
+    }
+
+    h2 {
+      margin-bottom: 0;
+
+      font-size: 1.5625rem;
+    }
+
+    h3 {
+      margin-top : 0;
+      font-size  : 1.25rem;
+      line-height: 1.4;
+    }
+
+    h5 {
+      margin-top: 2.5rem;
+
+      font-size: 0.855rem;
+    }
+  }
+}
