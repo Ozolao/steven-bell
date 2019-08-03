@@ -1,0 +1,67 @@
+  // ===============================
+  // ==================================
+  // =================================
+  .let-me-help {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 5.2rem 1.25rem 4.5rem;
+
+    color     : white;
+    text-align: center;
+
+    background: $primaryColor;
+
+
+
+    // ===============================
+    // ==================================
+    // =================================
+    .let-me-help-separator {
+      display: block;
+      width  : 7%;
+
+      border-top: .0625rem solid #efefef;
+    }
+
+
+
+    // ===============================
+    // ==================================
+    // =================================
+    h2 {
+      margin-top   : 1.6rem;
+      margin-bottom: 1.6rem;
+
+      font-size  : 1.5625rem;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+
+    a {
+      display       : block;
+      min-width     : 10rem;
+      margin-top    : .9rem;
+      padding-top   : 1.25rem;
+      padding-bottom: 1.25rem;
+
+      color          : black;
+      text-decoration: none;
+
+      background   : white;
+      border       : .0625rem solid #ffffff;
+      border-radius: $borderRadius;
+
+      transition: all 200ms linear;
+
+
+
+      // ===================================
+      // ================================
+      // ===============================
+      &:hover {
+        background: rgba(255, 255, 255, 0.9);
+        border    : .0625rem solid rgba(255, 255, 255, .9);
+      }
+    }
+  }
