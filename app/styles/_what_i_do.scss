@@ -145,7 +145,11 @@
     h2,
     h3,
     a {
-      color: $primaryColor
+      color: $primaryColor;
+
+      &:hover {
+        color: black;
+      }
     }
   }
 
@@ -154,19 +158,10 @@
   // ===================================
   // ===================================
   // ===================================
-  .ebooks-courses {
-    padding-top: 0;
-
-
-
-    // ===================================
-    // ===================================
-    // ===================================
-    img {
-      display  : block;
-      max-width: 100%;
-      width    : 12.5rem;
-      margin   : 0 auto 3rem;
-    }
+  .ebooks-courses img {
+    display  : block;
+    max-width: 100%;
+    width    : 12.5rem;
+    margin   : 0 auto 3rem;
   }
 }

@@ -69,6 +69,12 @@
       border-radius: $borderRadius;
 
       transition: all 200ms linear;
+
+      &:hover {
+        color: white;
+
+        background-color: $primaryColor;
+      }
     }
   }
 }
