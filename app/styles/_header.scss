@@ -39,10 +39,10 @@
     // ===================================
     // ===================================
     div {
-      width        : 14px;
-      height       : 2px;
-      margin-top   : 2px;
-      margin-bottom: 2px;
+      width        : .875rem;
+      height       : .125rem;
+      margin-top   : .125rem;
+      margin-bottom: .125rem;
 
       background-color: white;
       border-radius   : $borderRadius;
@@ -96,12 +96,12 @@
   overflow: hidden;
 
   background-color: #f9f9f9;
-  border-top      : 1px solid #eaeaea;
+  border-top      : .0625rem solid #eaeaea;
 
   transition: height .3s ease-out;
 
   &.active {
-    height: 223.6px;
+    height: 13.975rem;
   }
 
 
@@ -124,14 +124,14 @@
     // ===================================
     a {
       display: block;
-      padding: 11px 20px;
+      padding: .6875rem 1.25rem;
 
       color          : $neutralColor;
       font-size      : .741rem;
       text-decoration: none;
 
       background-color: #f9f9f9;
-      border-bottom   : 1px solid #eaeaea;
+      border-bottom   : .0625rem solid #eaeaea;
 
       &:hover,
       &.active {
@@ -152,11 +152,11 @@
   }
 
   50% {
-    transform: translateY(4px);
+    transform: translateY(.25rem);
   }
 
   100% {
-    transform: translateY(4px) rotateZ(45deg)
+    transform: translateY(.25rem) rotateZ(45deg)
   }
 }
 
@@ -178,11 +178,11 @@
   }
 
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-.25rem);
   }
 
   100% {
-    transform: translateY(-4px) rotateZ(135deg);
+    transform: translateY(-.25rem) rotateZ(135deg);
   }
 }
 
@@ -193,11 +193,11 @@
 // ===================================
 @keyframes animate-line-1-rev {
   0% {
-    transform: translateY(4px) rotateZ(45deg)
+    transform: translateY(.25rem) rotateZ(45deg)
   }
 
   50% {
-    transform: translateY(4px);
+    transform: translateY(.25rem);
   }
 
   100% {
@@ -219,11 +219,11 @@
 
 @keyframes animate-line-3-rev {
   0% {
-    transform: translateY(-4px) rotateZ(135deg);
+    transform: translateY(-.25rem) rotateZ(135deg);
   }
 
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-.25rem);
   }
 
   100% {
