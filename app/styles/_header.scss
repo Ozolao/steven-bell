@@ -1,7 +1,7 @@
 // ===================================
 // ===================================
 // ===================================
-.header {
+.top-nav {
   display        : flex;
   justify-content: space-between;
   align-items    : center;
@@ -50,15 +50,15 @@
       // ===================================
       // ===================================
       &.one {
-        animation: animate-line-1-rev .7s ease-in-out;
+        animation: animate-line-1-rev .3s ease-in-out;
       }
 
       &.two {
-        animation: animate-line-2-rev .7s ease-in-out;
+        animation: animate-line-2-rev .3s ease-in-out;
       }
 
       &.three {
-        animation: animate-line-3-rev .7s ease-in-out;
+        animation: animate-line-3-rev .3s ease-in-out;
       }
     }
 
@@ -69,20 +69,59 @@
     // ===================================
     &.active {
       .one {
-        animation: animate-line-1 .7s ease-in-out forwards;
+        animation: animate-line-1 .3s ease-in-out forwards;
       }
 
       .two {
-        animation: animate-line-2 .7s ease-in-out forwards;
+        animation: animate-line-2 .3s ease-in-out forwards;
       }
 
       .three {
-        animation: animate-line-3 .7s ease-in-out forwards;
+        animation: animate-line-3 .3s ease-in-out forwards;
       }
     }
   }
 }
 
+
+
+// ===================================
+// ===================================
+// ===================================
+.navigation {
+  height  : 0;
+  overflow: hidden;
+
+  background-color: #f9f9f9;
+
+  transition: height .3s ease-out;
+
+  &.active {
+    height: 215px;
+  }
+
+
+
+  // ===================================
+  // ===================================
+  // ===================================
+  ul {
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    a {
+      color          : $neutralColor;
+      text-decoration: none;
+
+      &:hover {
+        color: $primaryColor
+      }
+    }
+  }
+}
 
 
 

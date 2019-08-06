@@ -1,5 +1,9 @@
+// =================================
+// =menu-icon and navigation toggle=
+// =================================
 function change() {
   document.querySelector(".menu-icon").classList.toggle("active")
+  document.querySelector(".navigation").classList.toggle("active")
 }
 
 
