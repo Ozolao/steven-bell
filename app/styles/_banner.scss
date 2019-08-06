@@ -34,7 +34,8 @@
     }
 
     h1 {
-      margin-top: 4.6875rem;
+      margin-top   : 5.4rem;
+      margin-bottom: 1rem;
 
       font-size  : 1.875rem;
       line-height: 1.2;
@@ -86,6 +87,7 @@
       // ===================================
       // ===================================
       &:last-of-type {
+        margin-top   : 1rem;
         margin-bottom: 5.625rem;
 
         color: white;

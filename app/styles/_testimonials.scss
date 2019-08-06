@@ -2,9 +2,9 @@
 // ===================================
 // ===================================
 .testimonials {
-  height        : 100vh;
-  padding-top   : 9.375rem;
-  padding-bottom: 9.375rem;
+  height        : 81vh;
+  padding-top   : 8.8rem;
+  padding-bottom: 8.8rem;
 
   background: {
     image   : url("../images/testimonials.jpg");
@@ -51,6 +51,28 @@
       margin-top: 2.5rem;
 
       font-size: .855rem;
+    }
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@media only screen and (min-width: 545px) {
+  .testimonials {
+    height        : 76vh;
+    padding-top   : 9.5rem;
+    padding-bottom: 9.5rem;
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    div {
+      width: 95%;
     }
   }
 }
