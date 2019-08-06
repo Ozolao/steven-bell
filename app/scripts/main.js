@@ -1,3 +1,10 @@
+function change() {
+  document.querySelector(".menu-icon").classList.toggle("active")
+}
+
+
+
+
 // =================================
 // ==========scroll-to-top==========
 // =================================

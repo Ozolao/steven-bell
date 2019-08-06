@@ -21,7 +21,7 @@
   // ===================================
   // ===================================
   // ===================================
-  button {
+  .menu-icon {
     padding: .75rem;
 
     background   : $primaryColor;
@@ -30,6 +30,11 @@
 
     cursor: pointer;
 
+
+
+    // ===================================
+    // ===================================
+    // ===================================
     div {
       width        : 14px;
       height       : 2px;
@@ -38,6 +43,133 @@
 
       background-color: white;
       border-radius   : $borderRadius;
+
+
+
+      // ===================================
+      // ===================================
+      // ===================================
+      &.one {
+        animation: animate-line-1-rev .7s ease-in-out;
+      }
+
+      &.two {
+        animation: animate-line-2-rev .7s ease-in-out;
+      }
+
+      &.three {
+        animation: animate-line-3-rev .7s ease-in-out;
+      }
     }
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    &.active {
+      .one {
+        animation: animate-line-1 .7s ease-in-out forwards;
+      }
+
+      .two {
+        animation: animate-line-2 .7s ease-in-out forwards;
+      }
+
+      .three {
+        animation: animate-line-3 .7s ease-in-out forwards;
+      }
+    }
+  }
+}
+
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@keyframes animate-line-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: translateY(4px) rotateZ(45deg)
+  }
+}
+
+@keyframes animate-line-2 {
+  0% {
+    transform: scale(1);
+    opacity  : 1;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity  : 0;
+  }
+}
+
+@keyframes animate-line-3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(-4px) rotateZ(135deg);
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@keyframes animate-line-1-rev {
+  0% {
+    transform: translateY(4px) rotateZ(45deg)
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes animate-line-2-rev {
+  0% {
+    transform: scale(0);
+    opacity  : 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity  : 1;
+  }
+}
+
+@keyframes animate-line-3-rev {
+  0% {
+    transform: translateY(-4px) rotateZ(135deg);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
