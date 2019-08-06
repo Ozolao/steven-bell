@@ -14,6 +14,8 @@
   // ===================================
   img {
     max-width: 8.75rem;
+
+    transition: max-width .2s ease-out;
   }
 
 
@@ -226,5 +228,16 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@media only screen and (min-width: 545px) {
+  .top-nav img {
+    max-width: 14.875rem;
   }
 }
