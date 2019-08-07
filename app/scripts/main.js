@@ -2,8 +2,8 @@
 // =menu-icon and navigation toggle=
 // =================================
 function change() {
-  document.querySelector(".menu-icon").classList.toggle("active")
-  document.querySelector(".navigation").classList.toggle("active")
+  document.querySelector('.menu-icon').classList.toggle('active')
+  document.querySelector('.navigation').classList.toggle('active')
 }
 
 
@@ -13,12 +13,12 @@ function change() {
 // ==========scroll-to-top==========
 // =================================
 window.onscroll = function () {
-  let scroll_to_top = document.getElementById("scroll-to-top")
+  let scroll_to_top = document.getElementById('scroll-to-top')
 
   if (document.documentElement.scrollTop > 200) {
-    scroll_to_top.style.display = "block"
+    scroll_to_top.style.display = 'block'
   } else {
-    scroll_to_top.style.display = "none"
+    scroll_to_top.style.display = 'none'
   }
 }
 
