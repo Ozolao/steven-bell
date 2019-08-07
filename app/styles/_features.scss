@@ -26,8 +26,41 @@
   // ===================================
   // ===================================
   // ===================================
-  img {
-    margin-top   : 1.25rem;
-    margin-bottom: 1.25rem;
+  div {
+    display       : flex;
+    flex-direction: column;
+
+    img {
+      margin-top   : 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@media only screen and (min-width: 760px) {
+  .features {
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+    align-items   : unset;
+
+    h3 {
+      font-size : 1.3125rem;
+      text-align: center;
+    }
+
+    div {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-evenly;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }
