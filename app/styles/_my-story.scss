@@ -13,16 +13,13 @@
   // ===================================
   // ===================================
   .image {
-    height: 60vh;
+    height  : 61vh;
+    overflow: hidden;
 
-    background: {
-      image   : url("../images/my_story.jpg");
-      size    : cover;
-      position: center center;
-      repeat  : no-repeat;
+    img {
+      max-width: 100%;
     }
   }
-
 
 
   // ===================================
@@ -74,6 +71,64 @@
         color: white;
 
         background-color: $primaryColor;
+      }
+    }
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@media only screen and (min-width: 760px) {
+  .my-story {
+    display       : flex;
+    flex-direction: row-reverse;
+    padding       : 6.25rem 1.25rem;
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    .image {
+      width : 60vw;
+      height: 87.7vh;
+
+      img {
+        max-width  : 147%;
+        margin-left: -4.0625rem;
+      }
+    }
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    .text {
+      width  : 90%;
+      height : 100%;
+      padding: 2.5rem 2rem;
+
+
+
+      // ===================================
+      // ===================================
+      // ===================================
+      h2 {
+        margin-bottom: 1.5rem;
+
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: .8125rem;
+      }
+
+      a {
+        margin-top: -.625rem;
       }
     }
   }
