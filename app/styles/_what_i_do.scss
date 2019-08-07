@@ -160,8 +160,97 @@
   // ===================================
   .ebooks-courses img {
     display  : block;
-    max-width: 100%;
-    width    : 12.5rem;
+    max-width: 12.5rem;
     margin   : 0 auto 3rem;
+  }
+}
+
+
+
+// ===================================
+// ===================================
+// ===================================
+@media only screen and (min-width: 760px) {
+  .what-i-do {
+    padding-top   : 4rem;
+    padding-bottom: 4rem;
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.3125rem;
+    }
+
+    p {
+      font-size: .8125rem;
+    }
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    header {
+      padding-right: 5rem;
+      padding-left : 5rem;
+    }
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+
+    .i-do-container {
+      display: flex;
+    }
+
+
+
+    // ===================================
+    // ===================================
+    // ===================================
+    .advise-ebooks-container {
+      display: flex;
+
+      .advise,
+      .ebooks-courses {
+        padding-top   : 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .ebooks-courses {
+        display    : flex;
+        align-items: center;
+
+        img {
+          max-width    : 10rem;
+          margin-left  : -1.5625rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .what-i-do .advise-ebooks-container {
+
+    .advise,
+    .ebooks-courses {
+      padding-top   : 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .ebooks-courses img {
+      max-width: 8rem;
+    }
   }
 }
