@@ -2,11 +2,10 @@
 // ===================================
 // ===================================
 .features {
-  display       : flex;
-  flex-direction: column;
-  align-items   : center;
   padding-top   : 2.5rem;
   padding-bottom: 2.5rem;
+
+  text-align: center;
 
   background: #f3f8fb;
 
@@ -26,11 +25,12 @@
   // ===================================
   // ===================================
   // ===================================
-  div {
+  .images-container {
     display       : flex;
     flex-direction: column;
 
     img {
+      max-width    : 100%;
       margin-top   : 1.25rem;
       margin-bottom: 1.25rem;
     }
@@ -46,21 +46,15 @@
   .features {
     padding-top   : 2rem;
     padding-bottom: 2rem;
-    align-items   : unset;
 
     h3 {
-      font-size : 1.3125rem;
-      text-align: center;
+      font-size: 1.3125rem;
     }
 
-    div {
+    .images-container {
       display        : flex;
       flex-direction : row;
       justify-content: space-evenly;
-
-      img {
-        max-width: 100%;
-      }
     }
   }
 }
