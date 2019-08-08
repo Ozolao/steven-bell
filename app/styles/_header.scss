@@ -13,6 +13,7 @@
   // ===================================
   // ===================================
   img {
+    display  : block;
     max-width: 8.75rem;
 
     transition: max-width .2s ease-out;
@@ -95,9 +96,6 @@
   height  : 0;
   overflow: hidden;
 
-  background-color: #f9f9f9;
-  border-top      : .0625rem solid #eaeaea;
-
   transition: height .3s ease-out;
 
   &.active {
@@ -122,20 +120,32 @@
     // ===================================
     // ===================================
     // ===================================
-    a {
-      display: block;
-      padding: .6875rem 1.25rem;
+    li {
+      border-bottom: .0625rem solid #eaeaea;
 
-      color          : $neutralColor;
-      font-size      : .741rem;
-      text-decoration: none;
+      &:first-of-type {
+        border-top: .0625rem solid #eaeaea;
+      }
 
-      background-color: #f9f9f9;
-      border-bottom   : .0625rem solid #eaeaea;
 
-      &:hover,
-      &.active {
-        color: $primaryColor
+
+      // ===================================
+      // ===================================
+      // ===================================
+      a {
+        display: block;
+        padding: .6875rem 1.25rem;
+
+        color          : $neutralColor;
+        font-size      : .741rem;
+        text-decoration: none;
+
+        background-color: #f9f9f9;
+
+        &:hover,
+        &.active {
+          color: $primaryColor
+        }
       }
     }
   }
@@ -242,4 +252,40 @@
   }
 }
 
-@media only screen and (min-width: 922px) {}
+@media only screen and (min-width: 922px) {
+  header .container {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    .top-nav .menu-icon {
+      display: none;
+    }
+
+    .navigation {
+      height : unset;
+      padding: .75rem 1.25rem;
+
+      ul {
+        flex-direction: row;
+
+        li {
+          border-bottom: unset;
+
+          &:first-of-type {
+            border-top: unset;
+          }
+
+          a {
+            padding-right: .81rem;
+            padding-left : .81rem;
+
+            font-size: .8125rem;
+
+            background-color: unset;
+          }
+        }
+      }
+    }
+  }
+}
