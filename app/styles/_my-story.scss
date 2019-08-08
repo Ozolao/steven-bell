@@ -13,11 +13,11 @@
   // ===================================
   // ===================================
   .image {
-    height  : 61vh;
+    height  : 60vh;
     overflow: hidden;
 
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -81,6 +81,12 @@
 // ===================================
 // ===================================
 // ===================================
+@media only screen and (min-width: 445px) {
+  .my-story .image {
+    height: 87.7vh;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   .my-story {
     display       : flex;
@@ -93,11 +99,10 @@
     // ===================================
     // ===================================
     .image {
-      width : 60vw;
-      height: 87.7vh;
+      width: 40%;
 
       img {
-        max-width  : 147%;
+        width      : 146%;
         margin-left: -4.0625rem;
       }
     }
@@ -108,8 +113,7 @@
     // ===================================
     // ===================================
     .text {
-      width  : 90%;
-      height : 100%;
+      width  : 60%;
       padding: 2.5rem 2rem;
 
 
@@ -130,6 +134,27 @@
       a {
         margin-top: -.625rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .my-story .image {
+    height: 81vh;
+
+    img {
+      width: 130%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .my-story .image {
+    height: 73.2vh;
+
+    img {
+      width      : 100%;
+      margin-left: unset;
     }
   }
 }
