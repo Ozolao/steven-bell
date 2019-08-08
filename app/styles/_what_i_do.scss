@@ -2,8 +2,7 @@
 // ===================================
 // ===================================
 .what-i-do {
-  padding-top   : 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem .25rem;
 
 
 
@@ -173,22 +172,22 @@
 // ===================================
 // ===================================
 @media only screen and (min-width: 545px) {
-  .what-i-do header {
-    padding-right: 2rem;
-    padding-left : 2rem;
+  .what-i-do {
+    padding-right: .5rem;
+    padding-left : .5rem;
+
+    header {
+      padding-right: 2rem;
+      padding-left : 2rem;
+    }
   }
 }
 
 @media only screen and (min-width: 769px) {
   .what-i-do {
-    padding-top   : 4rem;
-    padding-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left : 1rem;
 
-
-
-    // ===================================
-    // ===================================
-    // ===================================
     h2 {
       font-size: 2.5rem;
     }
@@ -201,33 +200,21 @@
       font-size: .8125rem;
     }
 
-
-
-    // ===================================
-    // ===================================
-    // ===================================
     header {
       padding-right: 5rem;
       padding-left : 5rem;
     }
 
-
-
-    // ===================================
-    // ===================================
-    // ===================================
-
     .i-do-container {
       display: flex;
     }
 
-
-
-    // ===================================
-    // ===================================
-    // ===================================
     .advise-ebooks-container {
       display: flex;
+
+      .advise {
+        width: 33%;
+      }
 
       .advise,
       .ebooks-courses {
@@ -238,6 +225,7 @@
       .ebooks-courses {
         display    : flex;
         align-items: center;
+        width      : 67%;
 
         img {
           max-width    : 10rem;
@@ -249,16 +237,12 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
-  .what-i-do .advise-ebooks-container {
+@media only screen and (min-width: 985px) {
+  .what-i-do {
+    padding-right: 1.5rem;
+    padding-left : 1.5rem;
 
-    .advise,
-    .ebooks-courses {
-      padding-top   : 2.5rem;
-      padding-bottom: 2.5rem;
-    }
-
-    .ebooks-courses img {
+    .advise-ebooks-container .ebooks-courses img {
       max-width: 8rem;
     }
   }
