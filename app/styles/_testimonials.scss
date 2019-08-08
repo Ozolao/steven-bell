@@ -2,7 +2,6 @@
 // ===================================
 // ===================================
 .testimonials {
-  height        : 81vh;
   padding-top   : 8.8rem;
   padding-bottom: 8.8rem;
 
@@ -61,19 +60,8 @@
 // ===================================
 // ===================================
 @media only screen and (min-width: 545px) {
-  .testimonials {
-    height        : 76vh;
-    padding-top   : 9.5rem;
-    padding-bottom: 9.5rem;
-
-
-
-    // ===================================
-    // ===================================
-    // ===================================
-    div {
-      width: 95%;
-    }
+  .testimonials div {
+    width: 95%;
   }
 }
 
@@ -83,37 +71,19 @@
 // ===================================
 // ===================================
 @media only screen and (min-width: 769px) {
-  .testimonials {
-    height        : 81vh;
-    padding-top   : 8.8rem;
-    padding-bottom: 8.8rem;
+  .testimonials div {
+    width: 90%;
 
+    h2 {
+      font-size: 2.5rem;
+    }
 
+    h3 {
+      font-size: 1.3125rem;
+    }
 
-    // ===================================
-    // ===================================
-    // ===================================
-    div {
-      width       : 90%;
-      margin-left : auto;
-      margin-right: auto;
-
-
-
-      // ===================================
-      // ===================================
-      // ===================================
-      h2 {
-        font-size: 2.5rem;
-      }
-
-      h3 {
-        font-size: 1.3125rem;
-      }
-
-      h5 {
-        font-size: .9375rem;
-      }
+    h5 {
+      font-size: .9375rem;
     }
   }
 }
