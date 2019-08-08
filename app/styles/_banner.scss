@@ -14,7 +14,7 @@
   // ===================================
   // ===================================
   // ===================================
-  div {
+  .text {
     display       : flex;
     flex-direction: column;
     align-items   : center;
@@ -51,51 +51,60 @@
     // ===================================
     // ===================================
     // ===================================
-    a {
-      min-width: 10rem;
-      padding  : 1.25rem 2.1875rem;
+    .buttons {
+      display       : flex;
+      flex-direction: column;
+      align-items   : center;
+      width         : 90%;
+      margin-left   : auto;
+      margin-right  : auto;
 
-      text-decoration: none;
+      a {
+        min-width: 10rem;
+        padding  : 1.25rem 2.1875rem;
 
-      border       : .0625rem solid #ffffff;
-      border-radius: $borderRadius;
+        text-decoration: none;
 
-      transition: all 200ms linear;
+        border       : .0625rem solid #ffffff;
+        border-radius: $borderRadius;
 
-
-
-      // ===================================
-      // ===================================
-      // ===================================
-      &:first-of-type {
-        margin-top   : 1.5625rem;
-        margin-bottom: 1.5625rem;
-
-        color: black;
-
-        background: white;
-
-        &:hover {
-          background: rgba(255, 255, 255, .9);
-          border    : .0625rem solid rgba(255, 255, 255, .9);
-        }
-      }
+        transition: all 200ms linear;
 
 
 
-      // ===================================
-      // ===================================
-      // ===================================
-      &:last-of-type {
-        margin-top   : 1rem;
-        margin-bottom: 5.625rem;
+        // ===================================
+        // ===================================
+        // ===================================
+        &:first-of-type {
+          margin-top   : 1.5625rem;
+          margin-bottom: 1.5625rem;
 
-        color: white;
-
-        &:hover {
           color: black;
 
           background: white;
+
+          &:hover {
+            background: rgba(255, 255, 255, .9);
+            border    : .0625rem solid rgba(255, 255, 255, .9);
+          }
+        }
+
+
+
+        // ===================================
+        // ===================================
+        // ===================================
+        &:last-of-type {
+          margin-top   : 1rem;
+          margin-bottom: 5.625rem;
+
+          color: white;
+
+          &:hover {
+            color: black;
+
+            background: white;
+          }
         }
       }
     }
@@ -108,7 +117,7 @@
 // ===================================
 // ===================================
 @media only screen and (min-width: 545px) {
-  .banner div {
+  .banner .text {
     width: 95%;
 
     h1 {
@@ -120,9 +129,9 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .banner div {
+  .banner .text {
     align-items   : flex-start;
-    width         : 45%;
+    width         : 50%;
     margin-left   : 5%;
     padding-bottom: 2.125rem;
 
@@ -132,7 +141,7 @@
       font-size: 3.75rem;
     }
 
-    div {
+    .buttons {
       display       : flex;
       flex-direction: row;
       align-items   : baseline;
@@ -145,5 +154,11 @@
         margin-left: 2.1875rem;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 922px) {
+  .banner .text {
+    margin-left: 4%;
   }
 }
