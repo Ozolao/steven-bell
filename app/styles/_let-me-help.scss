@@ -2,61 +2,65 @@
 // ===================================
 // ===================================
 .let-me-help {
-  display       : flex;
-  flex-direction: column;
-  align-items   : center;
-  padding       : 5.2rem 1.25rem 4.5rem;
-
-  color     : white;
-  text-align: center;
+  padding: 5.2rem 1.25rem 4.5rem;
 
   background: $primaryColor;
 
+  .let-me-help-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
 
-
-  // ===================================
-  // ===================================
-  // ===================================
-  .let-me-help-separator {
-    display: block;
-    width  : 7%;
-
-    border-top: .0625rem solid #efefef;
-  }
+    color     : white;
+    text-align: center;
 
 
 
-  // ===================================
-  // ===================================
-  // ===================================
-  h2 {
-    margin-top   : 1.6rem;
-    margin-bottom: 1.6rem;
 
-    font-size  : 1.5625rem;
-    font-weight: 300;
-    line-height: 1.3;
-  }
+    // ===================================
+    // ===================================
+    // ===================================
+    .let-me-help-separator {
+      display: block;
+      width  : 7%;
 
-  a {
-    display       : block;
-    min-width     : 10rem;
-    margin-top    : .9rem;
-    padding-top   : 1.25rem;
-    padding-bottom: 1.25rem;
+      border-top: .0625rem solid #efefef;
+    }
 
-    color          : black;
-    text-decoration: none;
 
-    background   : white;
-    border       : .0625rem solid #ffffff;
-    border-radius: $borderRadius;
 
-    transition: all 200ms linear;
+    // ===================================
+    // ===================================
+    // ===================================
+    h2 {
+      margin-top   : 1.6rem;
+      margin-bottom: 1.6rem;
 
-    &:hover {
-      background: rgba(255, 255, 255, .9);
-      border    : .0625rem solid rgba(255, 255, 255, .9);
+      font-size  : 1.5625rem;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+
+    a {
+      display       : block;
+      min-width     : 10rem;
+      margin-top    : .9rem;
+      padding-top   : 1.25rem;
+      padding-bottom: 1.25rem;
+
+      color          : black;
+      text-decoration: none;
+
+      background   : white;
+      border       : .0625rem solid #ffffff;
+      border-radius: $borderRadius;
+
+      transition: all 200ms linear;
+
+      &:hover {
+        background: rgba(255, 255, 255, .9);
+        border    : .0625rem solid rgba(255, 255, 255, .9);
+      }
     }
   }
 }
@@ -70,12 +74,14 @@
   .let-me-help {
     padding: 7rem 7rem 6rem;
 
-    .let-me-help-separator {
-      width: 6%;
-    }
+    .let-me-help-container {
+      max-width   : 49.1875rem;
+      margin-right: auto;
+      margin-left : auto;
 
-    h2 {
-      font-size: 2.5rem;
+      h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
