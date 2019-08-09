@@ -12,65 +12,67 @@
   // ===================================
   // ===================================
   // ===================================
-  .image {
-    height  : 60vh;
-    overflow: hidden;
+  .my-story-container {
+    .image {
+      height  : 60vh;
+      overflow: hidden;
 
-    img {
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
-  }
-
-
-  // ===================================
-  // ===================================
-  // ===================================
-  .text {
-    padding: 2.5rem;
-
-    background-color: white;
-
 
 
     // ===================================
     // ===================================
     // ===================================
-    h2,
-    a {
-      color: $primaryColor
-    }
+    .text {
+      padding: 2.5rem;
 
-    h2 {
-      margin-top: 0;
+      background-color: white;
 
-      font-size  : 1.5625rem;
-      font-weight: 300;
-    }
 
-    p {
-      margin-bottom: 1.875rem;
 
-      color      : $neutralColor;
-      font-size  : .741rem;
-      line-height: 1.85714285714286;
-    }
+      // ===================================
+      // ===================================
+      // ===================================
+      h2,
+      a {
+        color: $primaryColor
+      }
 
-    a {
-      display   : inline-block;
-      margin-top: -.625rem;
-      padding   : 1.25rem 2.1875rem;
+      h2 {
+        margin-top: 0;
 
-      text-decoration: none;
+        font-size  : 1.5625rem;
+        font-weight: 300;
+      }
 
-      border       : .0625rem solid $primaryColor;
-      border-radius: $borderRadius;
+      p {
+        margin-bottom: 1.875rem;
 
-      transition: all 200ms linear;
+        color      : $neutralColor;
+        font-size  : .741rem;
+        line-height: 1.85714285714286;
+      }
 
-      &:hover {
-        color: white;
+      a {
+        display   : inline-block;
+        margin-top: -.625rem;
+        padding   : 1.25rem 2.1875rem;
 
-        background-color: $primaryColor;
+        text-decoration: none;
+
+        border       : .0625rem solid $primaryColor;
+        border-radius: $borderRadius;
+
+        transition: all 200ms linear;
+
+        &:hover {
+          color: white;
+
+          background-color: $primaryColor;
+        }
       }
     }
   }
@@ -82,64 +84,52 @@
 // ===================================
 // ===================================
 @media only screen and (min-width: 445px) {
-  .my-story .image {
+  .my-story .my-story-container .image {
     height: 87.7vh;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .my-story {
-    display       : flex;
-    flex-direction: row-reverse;
-    padding       : 6.25rem 1.25rem;
+    padding: 6.25rem .8rem;
 
+    .my-story-container {
+      display       : flex;
+      flex-direction: row-reverse;
 
+      .image {
+        width: 40%;
 
-    // ===================================
-    // ===================================
-    // ===================================
-    .image {
-      width: 40%;
-
-      img {
-        width      : 146%;
-        margin-left: -4.0625rem;
-      }
-    }
-
-
-
-    // ===================================
-    // ===================================
-    // ===================================
-    .text {
-      width  : 60%;
-      padding: 2.5rem 2rem;
-
-
-
-      // ===================================
-      // ===================================
-      // ===================================
-      h2 {
-        margin-bottom: 1.5rem;
-
-        font-size: 2.5rem;
+        img {
+          width      : 146%;
+          margin-left: -4.0625rem;
+        }
       }
 
-      p {
-        font-size: .8125rem;
-      }
+      .text {
+        width  : 60%;
+        padding: 2.5rem;
 
-      a {
-        margin-top: -.625rem;
+        h2 {
+          margin-bottom: 1.5rem;
+
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: .8125rem;
+        }
+
+        a {
+          margin-top: -.625rem;
+        }
       }
     }
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .my-story .image {
+  .my-story .my-story-container .image {
     height: 81vh;
 
     img {
@@ -149,7 +139,7 @@
 }
 
 @media only screen and (min-width: 1023px) {
-  .my-story .image {
+  .my-story .my-story-container .image {
     height: 73.2vh;
 
     img {
