@@ -67,6 +67,8 @@
     margin : 1.25rem .625rem;
     padding: 2.55rem 1.25rem;
 
+    border-radius: $borderRadius;
+
 
 
     // ===================================
@@ -91,8 +93,7 @@
   .i-do {
     color: white;
 
-    background   : $primaryColor;
-    border-radius: $borderRadius;
+    background: $primaryColor;
 
 
 
